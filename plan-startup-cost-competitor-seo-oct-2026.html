@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Competitor SEO Plan</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#e9eff6;color:#0b1f36;line-height:1.6;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+b,strong{font-weight:700}
+.gold{color:#c8a24a}
+.hl{background:#f3e7c4;padding:0 4px;border-radius:3px;font-weight:700}
+.hero{background:#0b1f36;color:#fff;border-bottom:6px solid #c8a24a;padding:28px 0 48px}
+.topbar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:#a9bbd0;padding-bottom:28px;border-bottom:1px solid #1d3f66;margin-bottom:36px}
+.label{color:#e3c77f;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700}
+.hero h1{font-size:34px;line-height:1.2;margin:10px 0 14px}
+.hero p.lead{font-size:18px;color:#d5e0ec;max-width:760px}
+.hero p.lead b{color:#e3c77f}
+.meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin:22px 0 30px;font-size:14px;color:#a9bbd0}
+.meta span b{color:#fff;font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kpi{background:#12355b;border-radius:10px;padding:20px}
+.kpi .n{font-size:32px;font-weight:800;color:#e3c77f;line-height:1.1}
+.kpi .t{font-size:14px;color:#d5e0ec;margin-top:6px}
+section{padding:60px 0}
+.light{background:#e9eff6}
+.white{background:#fff}
+.dark{background:#0b1f36;color:#fff}
+.sn{color:#0f4c81;font-weight:800;font-size:14px;letter-spacing:.12em}
+.dark .sn{color:#e3c77f}
+h2{font-size:28px;margin:4px 0 14px}
+.intro{max-width:780px;margin-bottom:28px;color:#33475e}
+.dark .intro{color:#c6d4e3}
+.card{background:#fff;border-radius:10px;box-shadow:0 2px 10px rgba(11,31,54,.08);padding:24px;margin-bottom:20px;border-left:5px solid #0f4c81}
+.card.med{border-left-color:#c8a24a}
+.card h3{font-size:19px;margin-bottom:8px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 10px;border-radius:20px;color:#fff;background:#0f4c81;white-space:nowrap}
+.tag.m{background:#c8a24a;color:#0b1f36}
+.card p{color:#33475e;margin-bottom:12px}
+.ev{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-right:6px}
+.ev.v{background:#e3f1e8;color:#1f6f43}
+.ev.h{background:#f3e7c4;color:#7a5d12}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+th{background:#0b1f36;color:#fff;text-align:left;padding:10px;font-weight:600}
+td{padding:10px;border-bottom:1px solid #e1e8f0;vertical-align:top}
+tr:nth-child(even) td{background:#f6f9fc}
+.tscroll{overflow-x:auto}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.cmp div{border-radius:8px;padding:14px;font-size:14px}
+.bad{background:#fbeceb;border:1px solid #e9b9b5}
+.bad b{color:#b3261e}
+.good{background:#e6f2ea;border:1px solid #b3d6c0}
+.good b{color:#1f6f43}
+.diagram{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:8px;font-size:13px}
+.box{background:#e9eff6;border:1px solid #c9d6e4;border-radius:6px;padding:8px 12px;font-weight:600}
+.box.g{background:#0b1f36;color:#e3c77f;border-color:#0b1f36}
+.arrow{color:#0f4c81;font-weight:800}
+.tl{background:#0b1f36;border-radius:12px;padding:26px;color:#fff;margin-bottom:30px}
+.tl h4{color:#e3c77f;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.row{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;margin-bottom:12px;font-size:14px}
+.track{position:relative;height:30px;background:#12355b;border-radius:6px}
+.bar{position:absolute;top:0;height:30px;background:#c8a24a;border-radius:6px;color:#0b1f36;font-size:12px;font-weight:700;padding:6px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wk{display:grid;grid-template-columns:120px repeat(4,1fr);font-size:12px;color:#a9bbd0;margin-bottom:10px}
+.steps{display:grid;gap:16px}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;background:#e9eff6;border-radius:10px;padding:20px}
+.step .num{width:44px;height:44px;border-radius:50%;background:#0f4c81;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.step h3{font-size:18px;margin-bottom:4px}
+.step p{color:#33475e;font-size:15px}
+.step .why{font-size:14px;color:#0f4c81;margin-top:6px}
+.res{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rc{background:#12355b;border-radius:12px;padding:22px}
+.rc .k{font-size:12px;color:#a9bbd0;text-transform:uppercase;letter-spacing:.08em}
+.rc .big{font-size:36px;font-weight:800;color:#e3c77f;margin:6px 0}
+.rc p{font-size:14px;color:#d5e0ec;margin-bottom:14px}
+.bars2{display:grid;gap:8px}
+.b2{font-size:12px;color:#c6d4e3}
+.b2 .t2{height:14px;background:#0b1f36;border-radius:4px;margin-top:3px}
+.b2 .f{height:14px;background:#c8a24a;border-radius:4px}
+.b2 .f.dim{background:#5b7aa0}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.nc{background:#fff;border-top:5px solid #c8a24a;border-radius:10px;padding:22px;box-shadow:0 2px 10px rgba(11,31,54,.08)}
+.nc h3{font-size:17px;margin-bottom:6px}
+.nc p{font-size:15px;color:#33475e}
+.cta{background:#c8a24a;padding:44px 0;text-align:center;color:#0b1f36}
+.cta h2{font-size:28px;margin-bottom:6px}
+footer{background:#0b1f36;color:#a9bbd0;padding:26px 0;font-size:14px;text-align:center}
+footer b{color:#fff}
+@media (max-width:760px){
+.kpis,.res,.next,.cmp{grid-template-columns:1fr}
+.hero h1{font-size:26px}
+h2{font-size:23px}
+.row{grid-template-columns:78px 1fr}
+.wk{grid-template-columns:78px repeat(4,1fr)}
+.step{grid-template-columns:1fr}
+section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="topbar"><span>Competitor SEO investigation, startup cost niche</span><span>8 October 2026</span></div>
+  <div class="label">30 day plan prepared for</div>
+  <h1>Your startup cost and business economics site</h1>
+  <p class="lead">A first pass on all four competitors already shows one shared pattern: <b>each one ranks through programmatic page templates multiplied across business types and US states</b>, not through a large blog. The paid investigation will put dates, traffic curves and link sources behind every step of that growth.</p>
+  <div class="meta">
+   <span>Scope: <b>4 competitor sites</b></span>
+   <span>Deliverable: <b>report plus replication roadmap</b></span>
+   <span>Tools: <b>Ahrefs, Semrush, Wayback Machine, live SERPs</b></span>
+  </div>
+  <div class="kpis">
+   <div class="kpi"><div class="n">5,000+</div><div class="t">possible business by state pages on HowMuchToStart (101 types across 50 states)</div></div>
+   <div class="kpi"><div class="n">700+</div><div class="t">business breakdowns Honestly Profitable lists on its homepage</div></div>
+   <div class="kpi"><div class="n">4 of 4</div><div class="t">competitors built on templated pages and free calculators</div></div>
+  </div>
+ </div>
+</header>
+
+<section class="light">
+ <div class="wrap">
+  <div class="sn">01</div>
+  <h2>What we found</h2>
+  <p class="intro">This is a surface review of the four live sites, done before any paid tool access. It tells us where to dig. Each point is labelled <span class="ev v">Verified</span> when it comes straight from the live site, or <span class="ev h">Hypothesis</span> when it still needs historical data to confirm. <span class="hl">That separation runs through the final report too.</span></p>
+
+  <div class="card">
+   <h3>Finding 1: growth is built on page templates, not articles <span class="tag">High impact</span></h3>
+   <p><span class="ev v">Verified</span> HowMuchToStart runs one template per business type (101 types) and links each one to 50 state versions, for example /auto-repair-shop/california. Every state page reuses the same cost table with a state multiplier, plus the LLC fee and sales tax. StartCosts lists 53 business types across all 50 states. BizMetricsHQ says it has 646 data pages across 29 industries, and its sitemap lists 355 URLs.</p>
+   <p><span class="ev h">Hypothesis</span> Most of their ranking keywords are long tail queries like "cost to start an auto repair shop in Texas". Ahrefs page level data will confirm which templates carry the traffic.</p>
+   <div class="diagram">
+    <span class="box">101 business types</span><span class="arrow">x</span><span class="box">50 states</span><span class="arrow">=</span><span class="box g">5,000+ indexable pages</span><span class="arrow">+</span><span class="box">6 calculators</span>
+   </div>
+  </div>
+
+  <div class="card">
+   <h3>Finding 2: four different ways to make the same data rank <span class="tag">High impact</span></h3>
+   <p>Each site packages startup cost data a different way. Your strategy should copy the angle that matches your data, not all four.</p>
+   <div class="tscroll">
+   <table>
+    <tr><th>Site</th><th>Main angle</th><th>Page model</th><th>Stack and money</th></tr>
+    <tr><td><b>HowMuchToStart</b></td><td>Cost by business and state</td><td>101 types x 50 states, 6 calculators, comparisons, guides</td><td>Next.js, affiliate links (Awin)</td></tr>
+    <tr><td><b>StartCosts</b></td><td>Cost by business and state, plus permits</td><td>53 types x 50 states, 63 guides, data led blog posts</td><td>JavaScript rendered pages, ad supported</td></tr>
+    <tr><td><b>Honestly Profitable</b></td><td>"Which business should I start"</td><td>700+ breakdowns, 14 categories, budget and skill filter hubs</td><td>Astro, AdSense</td></tr>
+    <tr><td><b>BizMetricsHQ</b></td><td>Revenue, margin and valuation benchmarks</td><td>29 industries, benchmark cards, franchise hub, yearly reports</td><td>Next.js, heavy methodology and trust pages</td></tr>
+   </table>
+   </div>
+  </div>
+
+  <div class="card med">
+   <h3>Finding 3: trust signals are doing ranking work <span class="tag m">Medium impact</span></h3>
+   <p><span class="ev v">Verified</span> All four publish methodology, editorial or data source pages and put a "last reviewed" date on templates. BizMetricsHQ shows sample sizes on every benchmark card. In a finance adjacent niche this is likely what lets thin, templated pages hold rankings through core updates.</p>
+   <div class="cmp">
+    <div class="bad"><b>What gets hit in updates</b><br>Templated pages with identical copy, no sources, no date and no author or method page.</div>
+    <div class="good"><b>What these sites do</b><br>Unique numbers per page, cited sources (SBA, BLS, state offices), dated reviews and a published method.</div>
+   </div>
+   <p style="margin-top:12px"><span class="ev h">Hypothesis</span> StartCosts returns almost no HTML before JavaScript runs. If Google renders it late, some of its pages may be under-indexed, and that gap is worth testing.</p>
+  </div>
+ </div>
+</section>
+
+<section class="white">
+ <div class="wrap">
+  <div class="sn">02</div>
+  <h2>The 30 day plan</h2>
+  <p class="intro">The full investigation is delivered inside 14 days. The rest of the month goes to turning it into a roadmap for your site and starting the first build.</p>
+
+  <div class="tl">
+   <h4>Timeline, weeks 1 to 4</h4>
+   <div class="wk"><span></span><span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Week 4</span></div>
+   <div class="row"><span>Data pull</span><div class="track"><div class="bar" style="left:0;width:25%">Ahrefs, Semrush, Wayback</div></div></div>
+   <div class="row"><span>Backlinks</span><div class="track"><div class="bar" style="left:12%;width:30%">Link sources and campaigns</div></div></div>
+   <div class="row"><span>Content</span><div class="track"><div class="bar" style="left:25%;width:25%">Templates and clusters</div></div></div>
+   <div class="row"><span>Report</span><div class="track"><div class="bar" style="left:40%;width:22%">Timelines and comparison</div></div></div>
+   <div class="row"><span>Roadmap</span><div class="track"><div class="bar" style="left:62%;width:38%">Your build plan and first fixes</div></div></div>
+  </div>
+
+  <div class="steps">
+   <div class="step"><div class="num">1</div><div><h3>Rebuild each site's growth history</h3><p>Pull organic traffic, keyword and referring domain history from Ahrefs and Semrush. Match each traffic jump against Wayback snapshots, sitemap size and Google update dates.</p><p class="why">Why: this is how a "growth period" becomes a dated event with a likely cause.</p></div></div>
+   <div class="step"><div class="num">2</div><div><h3>Trace every important backlink to its source</h3><p>Sort links by first seen date, referring domain strength and anchor text. Tag each one as outreach, guest post, data citation, directory, PR or tool embed, with source URLs.</p><p class="why">Why: data sites like these often earn links when journalists and bloggers cite a number. That can be copied.</p></div></div>
+   <div class="step"><div class="num">3</div><div><h3>Map the templates and keyword clusters that carry traffic</h3><p>Group top pages by template (business, business plus state, calculator, comparison, guide) and show traffic share, keyword count and internal link depth for each.</p><p class="why">Why: it tells you which template to build first and how many pages it needs.</p></div></div>
+   <div class="step"><div class="num">4</div><div><h3>Compare all four and split evidence from guesswork</h3><p>One comparison table across launch date, page count, link velocity, templates and monetisation. Every claim is tagged Verified or Hypothesis.</p><p class="why">Why: you asked for data backed conclusions, and this keeps the report honest.</p></div></div>
+   <div class="step"><div class="num">5</div><div><h3>Hand over a prioritised roadmap for your site</h3><p>Step by step build order: data model, page templates, internal linking, trust pages, link earning assets, and what to skip. Each step is ranked by effort against expected impact.</p><p class="why">Why: the research is only useful if it turns into a sequence you can execute.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark">
+ <div class="wrap">
+  <div class="sn">03</div>
+  <h2>Comparable results</h2>
+  <p class="intro">Organic growth from SEO accounts managed in the last few years.</p>
+  <div class="res">
+   <div class="rc">
+    <div class="k">Organic traffic</div>
+    <div class="big">+108%</div>
+    <p>Organic traffic growth, with form enquiries up 240% on the same work.</p>
+    <div class="bars2">
+     <div class="b2">Before<div class="t2"><div class="f dim" style="width:48%"></div></div></div>
+     <div class="b2">After<div class="t2"><div class="f" style="width:100%"></div></div></div>
+    </div>
+   </div>
+   <div class="rc">
+    <div class="k">Average ranking, sleep clinic</div>
+    <div class="big">13.7 to 9.5</div>
+    <p>Average position moved onto page one.</p>
+    <div class="bars2">
+     <div class="b2">Before, 13.7<div class="t2"><div class="f dim" style="width:69%"></div></div></div>
+     <div class="b2">After, 9.5<div class="t2"><div class="f" style="width:100%"></div></div></div>
+    </div>
+   </div>
+   <div class="rc">
+    <div class="k">Link building</div>
+    <div class="big">1,270+</div>
+    <p>High authority backlinks built. On one retailer, 246 external backlinks moved average ranking from 25.5 to 20.9.</p>
+    <div class="bars2">
+     <div class="b2">Backlinks built<div class="t2"><div class="f" style="width:100%"></div></div></div>
+     <div class="b2">Keywords with impressions, 3,400+<div class="t2"><div class="f" style="width:100%"></div></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="light">
+ <div class="wrap">
+  <div class="sn">04</div>
+  <h2>What happens next</h2>
+  <div class="next">
+   <div class="nc"><h3>1. Short call</h3><p>15 minutes to confirm your site, your data and which competitor angle is closest to yours.</p></div>
+   <div class="nc"><h3>2. Read only access</h3><p>Search Console view access for your site, so the roadmap compares your pages directly against theirs.</p></div>
+   <div class="nc"><h3>3. First week</h3><p>Full historical data pull for all four sites, with the first growth timeline shared by day 5.</p></div>
+  </div>
+ </div>
+</section>
+
+<div class="cta">
+ <div class="wrap">
+  <h2>Let's have a quick call</h2>
+  <p>Reply to my message with a time that suits you.</p>
+ </div>
+</div>
+
+<footer>
+ <div class="wrap"><b>Usman Gull</b>, Google Ads and SEO Specialist</div>
+</footer>
+
+</body>
+</html>
